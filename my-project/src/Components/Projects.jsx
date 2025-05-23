@@ -1,8 +1,11 @@
 import { motion } from "framer-motion"
 import ProjectCard from "./ProjectCard"
 import { FEATURED_PROJECTS } from "../constants"
+import { useTheme } from "../context/ThemeContext"
 
-const Projects = ({ isDarkMode = false }) => {
+const Projects = () => {
+  const { isDarkMode } = useTheme()
+
   // Animation variants
   const sectionVariants = {
     hidden: { opacity: 0 },
@@ -36,11 +39,12 @@ const Projects = ({ isDarkMode = false }) => {
 
   return (
     <motion.section
-      className={`py-20 px-6 md:px-20 ${isDarkMode ? "bg-gray-800" : "bg-gray-50"}`}
+      className={`py-20 px-6 md:px-20 transition-colors duration-500 ${isDarkMode ? "bg-gray-800" : "bg-gray-50"}`}
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
+      id="projects"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div
