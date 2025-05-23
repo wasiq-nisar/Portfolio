@@ -34,7 +34,7 @@ const Contact = () => {
         </p>
         <motion.a
           href="/ContactUs"
-          className={`inline-flex items-center gap-2 px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-all ${isDarkMode ? "bg-blue-600 text-white hover:bg-blue-700" : "bg-black text-white"
+          className={`inline-flex items-center gap-2 px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-all ${isDarkMode ? "bg-teal-600 text-white hover:bg-teal-700" : "bg-black text-white"
             }`}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

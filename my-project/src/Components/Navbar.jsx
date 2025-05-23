@@ -12,19 +12,25 @@ const Navbar = () => {
 
   // Function to handle smooth scrolling
   const handleNavClick = (e, link, linkName) => {
-    // Special case for Home link - scroll to top
+    // Special case for Home link
     if (linkName === "Home") {
-      e.preventDefault()
+      // If we're already on the home page, scroll to top
+      if (location.pathname === "/") {
+        e.preventDefault()
 
-      // Close mobile menu if open
-      setIsOpen(false)
+        // Close mobile menu if open
+        setIsOpen(false)
 
-      // Scroll to top with smooth behavior
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      })
-
+        // Scroll to top with smooth behavior
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        })
+      } else {
+        // If we're on a different page, let the Link component handle navigation to "/"
+        // Close mobile menu if open
+        setIsOpen(false)
+      }
       return
     }
 
@@ -82,9 +88,7 @@ const Navbar = () => {
         <li>
           <motion.button
             onClick={toggleTheme}
-            className={`p-2 rounded-full transition-colors duration-300 ${isDarkMode
-              ? "bg-gray-800 text-yellow-300 hover:bg-gray-700"
-              : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+            className={`p-2 rounded-full transition-colors duration-300 ${isDarkMode ? "bg-gray-800 text-teal-300 hover:bg-gray-700" : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -101,7 +105,7 @@ const Navbar = () => {
         {/* Mobile Theme Toggle */}
         <motion.button
           onClick={toggleTheme}
-          className={`p-2 mr-2 rounded-full transition-colors duration-300 ${isDarkMode ? "bg-gray-800 text-yellow-300 hover:bg-gray-700" : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+          className={`p-2 mr-2 rounded-full transition-colors duration-300 ${isDarkMode ? "bg-gray-800 text-teal-300 hover:bg-gray-700" : "bg-gray-100 text-gray-700 hover:bg-gray-200"
             }`}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}

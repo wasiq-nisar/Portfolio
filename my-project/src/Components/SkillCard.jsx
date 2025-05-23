@@ -55,7 +55,7 @@ export const SkillCard = ({ icon, title, skills, isDarkMode = false, index }) =>
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <span className={`w-2 h-2 rounded-full ${isDarkMode ? "bg-blue-400" : "bg-gray-800"}`}></span>
+            <span className={`w-2 h-2 rounded-full ${isDarkMode ? "bg-teal-400" : "bg-gray-800"}`}></span>
             <span className={`transition-colors duration-300 ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
               {skill}
             </span>
