@@ -22,13 +22,13 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-wrap gap-4 mt-8">
-          <Link
-            href="/projects"
+          <a
+            href="/ContactUs"
             className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full text-lg font-semibold hover:scale-105 transition-transform"
           >
             {HERO_CONTENT.cta}
             <ArrowRight className="w-5 h-5" />
-          </Link>
+          </a>
 
           {/* <Link
             href="/resume.pdf"

@@ -35,13 +35,13 @@ import { Smartphone, Globe, Code, Server, Layout, GitBranch, Zap } from "lucide-
 export const SKILLS = [
   {
     icon: Smartphone,
-    title: "iOS Development",
-    skills: ["Swift", "SwiftUI", "UIKit", "Core Data", "Realm"]
+    title: "Mobile Development",
+    skills: ["ReactNative","Kotlin", "Swift", "SwiftUI", "UIKit", "Core Data", "Realm"]
   },
   {
     icon: Globe,
     title: "Web Development",
-    skills: ["MongoDB", "Express", "React", "Node.js", "Redux", "Tailwind CSS"]
+    skills: ["HTML", "CSS", "JavaScript", "React", "Redux", "Tailwind CSS", "Bootstrap"]
   },
   {
     icon: Code,
@@ -51,7 +51,7 @@ export const SKILLS = [
   {
     icon: Server,
     title: "Backend & APIs",
-    skills: ["SQL", "MongoDB", "RESTful APIs", "JSON", "API Integration", "Firebase"]
+    skills: ["Node.js", "Express", "SQL", "MongoDB", "Firebase", "RESTful APIs", "API Integration"]
   },
   {
     icon: Layout,
@@ -61,7 +61,7 @@ export const SKILLS = [
   {
     icon: GitBranch,
     title: "Version Control",
-    skills: ["Git", "GitHub", "Trunk Based Development", "CI/CD"]
+    skills: ["Git", "GitHub", "Bitbucket", "Trunk Based Development", "CI/CD"]
   },
   {
     icon: Zap,
