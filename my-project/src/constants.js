@@ -81,14 +81,14 @@ export const FEATURED_PROJECTS = [
     description:
       "A travel application facilitating earning opportunities for drivers in Saudi Arabia and Jordan.",
     image: JeenyDriverImg,
-    technologies: ["Swift", "UIKit", "SwiftUI", "RestAPI"],
+    technologies: ["Kotlin", "Swift", "UIKit", "SwiftUI", "RestAPI"],
   },
   {
     title: "Jeeny - Book Affordable Rides",
     description:
       "A ride-hailing app designed for customers in Saudi Arabia and Jordan to book affordable and convenient rides with ease.",
     image: JeenyRiderImg,
-    technologies: ["Swift", "UIKit", "SwiftUI", "RestAPI"],
+    technologies: ["Kotlin", "Swift", "UIKit", "SwiftUI", "RestAPI"],
   }
   ,
   {
